@@ -1,0 +1,33 @@
+.board-container {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  /* กำหนดความกว้างแต่ละคอลัมน์ เช่น 60px หรือใช้ 1fr */
+  grid-template-rows: repeat(3, 60px);
+  /* กำหนดความสูงแต่ละแถว */
+  gap: 5px;
+  /* ระยะห่างระหว่างช่อง */
+  justify-content: center;
+  /* จัดให้อยู่ตรงกลางหน้าจอ */
+  margin-top: 20px;
+}
+
+/* ตกแต่งปุ่ม square แต่ละช่อง */
+.square {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status {
+  margin: 10px;
+  font-size: 1.2em;
+  font-family: "Secular One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
